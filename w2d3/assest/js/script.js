@@ -1,27 +1,196 @@
-const mioOggetto = {
-    nome: 'Umberto',
-    cognome: 'Barera',
-    eta: 0,
-    patente: true,
-
-    calcolaEta:function(anno) {
-        this.eta = 2023 - anno;
-    },
-    stampa: function () {
-        return (
-            this.nome + ' ' + this.cognome + ' ' + this.eta + ' ' + this.patente
-        )
+//1
+{
+    let x = 2;
+    let y = 4;
+    if (x > y) {
+        console.log(x)
+    }
+    else {
+        console.log(y)
     }
 }
 
-document.getElementById('calcola').addEventListener('click', function() {
-    let anno = document.getElementById('anno').ariaValueMax;
-    mioOggetto.calcolaEta(anno);
-    scrvi();
+//2
 
-});
-
-function scrvi() {
-    document.getElementById('oggetto').innerHTML = mioOggetto.stampa();
+{
+    let x = 4;
+    if (x != 5) {
+        console.log('not equal')
+    }
+    else {
+        console.log('equal to 5')
+    }
 }
 
+//3
+
+{
+    let x = 25;
+    if (x % 5 == 0) {
+        console.log('divisibile per 5')
+    }
+    else {
+        console.log('non divisibile per 5')
+    }
+}
+
+//4
+
+{
+
+    let x = 8;
+    let y = 3;
+
+    if (x == 8) {
+        console.log('verificato')
+    }
+    else if (y == 8) {
+        console.log('verificato')
+    }
+    else if (x + y == 8) {
+        console.log('verificato')
+    }
+    else if (x - y == 8) {
+        console.log('verificato')
+    }
+    else {
+        console.log('non verificato')
+    }
+}
+
+//5
+
+{
+    let totalShoppingCart = 70;
+    let spedizione = 10;
+    let totale = totalShoppingCart + spedizione;
+    if (totalShoppingCart > 50) {
+        totale = totalShoppingCart
+        console.log("il totale e' " + totale)
+    }
+    else {
+        console.log("il totale e' " + totale)
+    }
+}
+
+//6
+
+{
+    let totalShoppingCart = 30;
+    let spedizione = 10;
+    let blackFridayPrice = totalShoppingCart - (totalShoppingCart * .2);
+    let totale = blackFridayPrice + spedizione;
+    if (totale > 50) {
+        totale = blackFridayPrice
+        console.log("il totale e' " + totale)
+    }
+    else {
+        console.log("il totale e' " + totale)
+    }
+}
+//7
+
+{
+    let x = 3;
+    let y = 4;
+    let z = 5;
+
+    myArray = [z, x, y];
+    myArray.sort()
+
+    console.log(myArray)
+}
+
+
+
+//8
+
+{
+
+    let x = '34';
+    console.log(typeof x);
+
+}
+//9
+
+{
+    let x = 9;
+
+    if (x % 2 == 0) {
+        console.log("e' pari")
+    }
+    else {
+        console.log("e' dispari")
+    }
+}
+//10
+ 
+{
+
+    let val = 7;
+    if (val < 5) {
+        console.log("Meno di 5");
+    } else if (val < 10) {
+        console.log("Meno di 10");
+    } else {
+        console.log("Uguale a 10 o maggiore");
+    }
+}
+
+
+
+/*Esercizio11
+*/
+{
+    const me = {
+        name: 'John',
+        lastName: 'Doe',
+        skills: ['javascript', 'html', 'css'],
+    }
+
+    me.city = 'Toronto';
+    console.log(me)
+}
+//12
+
+{
+    const me = {
+        name: 'John',
+        lastName: 'Doe',
+        skills: ['javascript', 'html', 'css'],
+    }
+    delete me.lastName;
+    console.log(me)
+}
+
+//13
+
+{
+    const me = {
+        name: 'John',
+        lastName: 'Doe',
+        skills: ['javascript', 'html', 'css'],
+    }
+
+    delete me.skills[2]
+    console.log(me)
+}
+
+//14
+
+{
+    const myArray = [];
+
+    myArray.push('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+    console.log(myArray)
+}
+
+//15
+
+{
+    const myArray = [];
+
+    myArray.push('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+    myArray.splice(9, 1, '100')
+    console.log(myArray)
+}
