@@ -1,0 +1,53 @@
+.card {
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 20%;
+    overflow: hidden;
+    background-color: #fbf7e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width:100%
+}
+
+.card content{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 30px 0;
+
+}
+
+.honey{
+    color: #612407;
+}
+
+.honey h2{
+    margin: 0;
+    font-size: 1.5;
+}
+
+.honey p{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.price{
+    color: #612407;
+    font-size: 1.5em;
+}
+
+.card button{
+    width: 45%;
+    align-self: center;
+    background-color: #f3df85;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    color: #612407;
+    margin-bottom: 10px;
+    font-size: 1em;
+
+}
